@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 HackathonHub
 
-## Getting Started
+A full-stack hackathon management platform built with Next.js, TypeScript, TailwindCSS, and Firebase.
 
-First, run the development server:
+## ✨ Features
+
+- 🔐 User authentication (Firebase Auth)
+- 👥 Team management and collaboration
+- 🏆 Hackathon registration system
+- 💻 Project workspace with GitHub integration
+- 👑 Admin dashboard for organizers
+- 📊 Real-time updates with Firestore
+
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.local.example .env.local
+# Edit .env.local with your Firebase config
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **[HACKATHON_README.md](./HACKATHON_README.md)** - Complete feature documentation
+- **[SETUP_GUIDE.md](./SETUP_GUIDE.md)** - Detailed setup and deployment guide
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Backend**: Firebase (Auth, Firestore, Storage)
+- **Deployment**: Vercel-ready
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Homepage](https://github.com/user-attachments/assets/ce911a03-c24d-47bf-b3f6-71832f13fb9b)
+![Signup](https://github.com/user-attachments/assets/d374253d-b615-4096-b5cf-0f236bdb49b3)
+![Teams](https://github.com/user-attachments/assets/c9804499-dd5f-435a-b4b9-2a767a8388cc)
 
-## Deploy on Vercel
+## 🎯 Core Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/` - Homepage with active hackathons
+- `/signup` - User registration
+- `/login` - User authentication
+- `/teams` - Browse and create teams
+- `/teams/[id]` - Team detail and collaboration
+- `/register` - Hackathon registration
+- `/dashboard` - Admin/organizer dashboard (requires admin role)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔒 Security
+
+This project includes:
+- Firebase Authentication
+- Firestore security rules
+- Role-based access control (participant, organizer, admin)
+- Protected routes
+
+## 📦 Installation
+
+See [SETUP_GUIDE.md](./SETUP_GUIDE.md) for complete installation instructions.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues and pull requests.
+
+## 📝 License
+
+MIT License - feel free to use this project for your hackathons!
+
+---
+
+Built with ❤️ for the hackathon community
